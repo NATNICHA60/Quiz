@@ -1,0 +1,64 @@
+git log --oneline --decorate --graph
+// q exit  //
+
+git log --oneline 
+git log
+
+git checkout -b hotfix //สร้างบ้านนั้นแล้วกระโดดไปยังที่นั่น
+
+echo "abc"
+echo akb-bnk > hotfix
+git add .
+git commit -m "comment"
+
+git checkout master
+git merge --no-ff hotfix
+
+git branch -d hotfix
+git push origin --delete hotfix //ลบบ้านที่รีโมต
+
+find : credential manager --> window , github : remove
+
+//rollback
+git checkout fb77467 // มันจะเปลี่ยนตำแหน่ง head 
+
+
+//tag
+git tag v1.0.0
+git status // ไม่มีไรเกิดขึ้น
+git push --tags
+จะถาม user
+แล้วไปดูในเว็บ จะติด tag ได้
+
+ย้ายเฮด git checkout fb14545
+git checkout v1.0.0
+
+git log --oneline //ดู มันจะย้อน เฮดให้
+
+//delete tag
+git tag -d v1.0.0 //แค่ในคอม
+//gelete tag in remote
+git push origin --delete v1.0.0
+
+issues
+Assignees - ต้องแอดเข้าโครงงานก่อน สามารถให้เพื่อนเข้ามาช่วยได้ --> setting > collaborators  > add collavorators
+
+label --> แก้ ลาเบลใหม่ได้ ติดสีได้ ติดlabels ไว้ได้
+
+
+echo ReserveFeature > reserve.txt
+git add . 
+git commit -m "fix #2 Create Feature"   //close
+git push -u origin master
+
+
+//Milestone
+
+ไปหน้า issues เเล้ว ผูกกับไมล์สโตนกับขวาล่าง
+
+//project
+แอดเพื่อนได้ด้วย collaborators
+
+
+
+setting --> integrations

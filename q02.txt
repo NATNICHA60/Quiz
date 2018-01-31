@@ -1,0 +1,51 @@
+git checkout test.txt (discard edit)
+git reset HEAD test.txt 
+git reset --soft "HEAD^"
+
+
+git rm text.txt
+# recovery
+git reset HEAD text.txt
+git checkout test.txt
+
+git add .
+git log --oneline
+
+git fetch มันจะบอกว่า ใน dir กับ repo มันไม่เหมือนกันแล้วนะ
+git merge จะทำเหมือนกัน , git pull
+
+git add . 
+git stash 	#hide
+git pull
+git stash pop #recover
+git add .
+git commit -m ".."
+git push
+
+git branch -a # list branch
+git branch dev # create branch
+git checkout dev  # switch branch to dev
+git branch -a
+
+# create+switch to new branch
+git checkout -b new 
+
+git branch -d new
+git checkout master
+
+git branch -a
+
+______
+git add .
+git commit -m "add dev.md"
+git push -u origin dev
+
+____
+homework
+Create 2 new branches (dev,feature)
+dev :dev.md (llist command you have learnt)
+feature : feature.md (list features in your project)
+
+swith to branch master:
+git merge --no-ff dev
+git merge --no-ff feature
